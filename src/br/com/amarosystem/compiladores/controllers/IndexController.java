@@ -24,6 +24,11 @@ import br.com.amarosystem.compiladores.util.AsListItem;
 import br.com.amarosystem.compiladores.util.AsUtil;
 import br.com.amarosystem.compiladores.views.IndexFrame;
 
+/**
+ * Classe controller para a view IndexView
+ * @author Matheus Amaro
+ *
+ */
 public class IndexController implements Runnable {
 	private static IndexController instance;
 	

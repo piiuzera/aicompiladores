@@ -8,6 +8,11 @@ import javax.swing.ImageIcon;
 
 import br.com.amarosystem.compiladores.views.AboutFrame;
 
+/**
+ * Classe controller para a view AboutView
+ * @author Matheus Amaro
+ *
+ */
 public class AboutController implements Runnable {
 	
 	private static AboutController instance;

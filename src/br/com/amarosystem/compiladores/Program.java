@@ -41,16 +41,10 @@ public class Program {
 	 */
 	public boolean isCodigoValido(String codigo) throws AsException {
 		if(!codigo.isEmpty()) {
-			String strChar = "";
-			for(char objChar : codigo.toCharArray()) {
-				if(objChar != '\n') {
-					strChar += String.valueOf(objChar);
-				}
-			}
 			int estado = 0;
 			
-			for(int i = 0; i < strChar.length(); i++) {
-				char objChar = strChar.toCharArray()[i];
+			for(int i = 0; i < codigo.length(); i++) {
+				char objChar = codigo.toCharArray()[i];
 				if(estado == 0) {
 					if(objChar == ' ') {
 						estado = 0;
