@@ -1,6 +1,7 @@
 package br.com.amarosystem.compiladores.util;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.function.Predicate;
 
 public class AsList<generic> extends ArrayList<generic> {
@@ -8,6 +9,10 @@ public class AsList<generic> extends ArrayList<generic> {
 	
 	public AsList() {
 		super();
+	}
+	
+	public AsList(Collection<? extends generic> list) {
+		super(list);
 	}
 	
 	public boolean equals(AsList<generic> list) {
