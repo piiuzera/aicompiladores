@@ -6,6 +6,10 @@ import java.util.function.Predicate;
 public class AsList<generic> extends ArrayList<generic> {
 	private static final long serialVersionUID = 1106436142726609626L;
 	
+	public AsList() {
+		super();
+	}
+	
 	public boolean equals(AsList<generic> list) {
 		if(this.size() > list.size() || this.size() < list.size()) {
 			return false;
